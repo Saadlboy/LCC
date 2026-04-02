@@ -94,17 +94,16 @@
     }
     
     /* ========================================== */
-    /* УСКОРЯЕМ ВСЕ АНИМАЦИИ НА САЙТЕ В 2 РАЗА    */
+    /* УСКОРЯЕМ ВСЕ АНИМАЦИИ НА САЙТЕ             */
     /* ========================================== */
     
-    /* Ускоряем главный баннер при загрузке страницы */
-    #banner,
-    #banner .inner,
-    #banner h2,
-    #banner p,
-    #banner .more {
-        transition-duration: 0.01s !important;
-        animation-duration: 0.01s !important;
+    /* Жестко глушим все паузы и ускоряем вылет главного экрана */
+    #banner, 
+    #banner * {
+        transition-duration: 0.3s !important;
+        transition-delay: 0s !important; /* Убиваем задержку появления */
+        animation-duration: 0.3s !important;
+        animation-delay: 0s !important;
     }
 
     /* Ускоряем появление блоков с преимуществами */
@@ -113,7 +112,6 @@
     #one .spotlight .content,
     #one .spotlight .image img {
         transition-duration: 0.4s !important;
-        animation-duration: 0.4s !important;
     }
 </style>
 				<!-- One -->
