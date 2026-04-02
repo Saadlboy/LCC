@@ -53,11 +53,28 @@
 						</div>
 						<a href="#one" class="more scrolly">Преимущества</a>
 					</section>
-	<style>
-    /* Увеличиваем ширину блока с картинкой на десктопе */
+<style>
+    /* Увеличиваем блок с картинкой до МАКСИМУМА */
     #one .spotlight .image {
-        width: 55% !important; 
+        width: 65% !important; /* Было 55%, теперь картинка занимает почти две трети экрана */
         padding: 20px; 
+    }
+
+    /* Сжимаем блок с текстом */
+    #one .spotlight .content {
+        width: 35% !important; /* Оставшееся место под текст */
+        padding: 3em !important; /* Немного уменьшаем отступы внутри текста */
+    }
+    
+    /* Делаем сам шрифт текста чуть меньше и аккуратнее */
+    #one .spotlight .content h2 {
+        font-size: 1.5em; /* Уменьшили заголовок */
+        line-height: 1.3;
+        margin-bottom: 0.5em;
+    }
+    
+    #one .spotlight .content p {
+        font-size: 0.9em; /* Уменьшили основной текст */
     }
     
     /* Делаем саму картинку красивой */
@@ -68,11 +85,11 @@
         box-shadow: 0 15px 30px rgba(0,0,0,0.3); 
     }
 
-    /* Настройка для мобильных телефонов, чтобы ничего не съехало */
+    /* Настройка для мобильных телефонов, чтобы там всё строилось друг под другом */
     @media screen and (max-width: 980px) {
-        #one .spotlight .image {
+        #one .spotlight .image, #one .spotlight .content {
             width: 100% !important;
-            padding: 0;
+            padding: 20px !important;
         }
     }
 </style>
