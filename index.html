@@ -91,15 +91,29 @@
             width: 100% !important;
             padding: 20px !important;
         }
-    } /* <--- ВОТ ЭТОЙ СКОБКИ НЕ ХВАТАЛО */
+    }
     
-    /* Ускоряем анимацию появления блоков в 2 раза */
+    /* ========================================== */
+    /* УСКОРЯЕМ ВСЕ АНИМАЦИИ НА САЙТЕ В 2 РАЗА    */
+    /* ========================================== */
+    
+    /* Ускоряем главный баннер при загрузке страницы */
+    #banner,
+    #banner .inner,
+    #banner h2,
+    #banner p,
+    #banner .more {
+        transition-duration: 0.4s !important;
+        animation-duration: 0.4s !important;
+    }
+
+    /* Ускоряем появление блоков с преимуществами */
     #one .spotlight,
     #one .spotlight .image,
     #one .spotlight .content,
     #one .spotlight .image img {
         transition-duration: 0.4s !important;
-        animation-duration: 0.4s !important; /* Добавил на всякий случай, если шаблон использует кейфреймы */
+        animation-duration: 0.4s !important;
     }
 </style>
 				<!-- One -->
